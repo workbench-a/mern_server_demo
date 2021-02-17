@@ -24,7 +24,7 @@ mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnified
 mongoose.set('useFindAndModify', false);
 
 // routes
+app.use('/posts', postRoutes);
 app.use('/', (req, res) => {
     res.send('Fashion Connection Backend API');
 });
-app.use('/posts', postRoutes);
