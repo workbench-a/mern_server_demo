@@ -27,5 +27,5 @@ mongoose.set('useFindAndModify', false);
 app.use('/posts', postRoutes);
 
 app.use('/', (req, res) => {
-    res.send('Fashion Connection Backend API');
+    res.send('Welcome to the API!');
 });
